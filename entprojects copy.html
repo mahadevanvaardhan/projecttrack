@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NUK Projects</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="images/favicon.png" rel="icon" type="image/x-icon">
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+</head>
+<body>
+	<!-- Top Article List -->
+	<div class="flex full-height">
+	<!DOCTYPE html>
+<html>
+<body>
+
+<div id="mySidenav" class="sidenav left-container">
+	<div class="logo"></div>
+	 
+</div>
+
+<div id="main" class="right-container">
+  <!-- Header -->
+	<!-- <header class="col-sm-12">
+		<span class="icon-menu pull-left" onclick="openNav()"></span>
+		<span class="icon-menu pull-left" onclick="closeNav()"></span>
+				<div class="pull-right">
+				<div class="search">
+					<input type="search" name="googlesearch" placeholder="Search the Data Portal...">
+					<button></button>
+				</div>
+				<a href="" class="user-profile">Username</a>
+			</div>
+	</header> -->
+	<!-- Breadcrumb -->
+		<header class="col-sm-12">
+	<div class="breadcrumb col-sm-12">
+		<ul>
+			<li><span class="icon-menu pull-left" onclick="openNav()"></span></li>
+			<li><span class="icon-menu pull-left" onclick="closeNav()"></span></li>
+			<li><a href="index.html" class="home"><i class="icon-home"></i></a></li>
+			<li><a href="entprojects.html" class="npd-folder">NUK Enterprise</a></li>
+		</ul>
+	</div>
+	</header>
+
+	<main class="col-sm-12 main-container" id="main-container">
+		<!-- Container-->
+		<div class="tile-container" id="tile-container">
+			<ul>
+				<li class="col-md-3 col-sm-3 col-xs-2"><div class="folder" onclick="showPlanner()"><p> Enterprise Planner</p></div></li>
+				<li class="col-md-3 col-sm-3 col-xs-2"><div class="folder" onclick="showTracker()"><p>Enterprise Release Tracker</p></div></li>
+				<li class="col-md-3 col-sm-3 col-xs-2"><div class="folder" onclick="showWeeklyStatus()"><p>Enterprise Weekly Status</p></div></li>
+							
+			</ul>
+		</div>
+		<div class="height">
+			<iframe id="pageiframe" class="none"><div class="loader"></div></iframe>
+		</div>
+		</main>
+</div>
+	<script>
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "250px";
+	    document.getElementById("main").style.marginLeft = "0";
+	}
+
+	function showPlanner() {
+		// document.getElementById("pageiframe").style.display = "block";
+		document.getElementById("pageiframe").className = "";
+		document.getElementById("pageiframe").src = "https://docs.google.com/spreadsheets/d/1l6ZkaDcavhDMk2CXa8Bq46YVHzP5ZMsNeor24WedRaw/edit";
+		document.getElementById("tile-container").className = "none";
+		addTab();
+	}
+
+	function showTracker() {
+		// document.getElementById("pageiframe").style.display = "block";
+		document.getElementById("pageiframe").className = "";
+		document.getElementById("pageiframe").src = "https://docs.google.com/a/news.co.uk/spreadsheets/d/1VG4BrAW5edM2c2R4qJI7RcEbMUdOfm_8bvc63bEd1Cg/edit?usp=drive_web";
+		document.getElementById("tile-container").className = "none";
+		addTab();
+	}
+
+	// function showWeeklyStatus() {
+	// 	// document.getElementById("pageiframe").style.display = "block";
+	// 	document.getElementById("pageiframe").className = "";
+	// 	document.getElementById("pageiframe").src = "https://docs.google.com/spreadsheets/d/1EsSCgZB1-Nqc93I-fR7YgYAOGcJsKX8zW6A2Dx6jaYM/edit#gid=1644290160";
+	// 	document.getElementById("tile-container").className = "none";
+	// 	addTab();
+	// }
+
+	function addTab() {
+		document.getElementByClass('breadcrumb')
+	}
+
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "60px";
+	    document.getElementById("main").style.marginLeft= "0";
+	}
+	</script>
+	</div>
+</body>
+</html>
